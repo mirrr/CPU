@@ -14,10 +14,10 @@ Asel, Bsel, WBSel, ALUSel, RegWEn, ImmSel; Set Asel with a mux to be 1 for jal, 
     
 branch comparator: used comparators to set output values for BrLt and BrEq. Used BrUn to determine whether comparison would be signed or unsigned.   
  
-  -imm_gen: Miranda, U type debugging: Jenny - used splitters to generate immediates for each instruction type following green sheet and provided table in spec  
-  -pipelining: Jenny - added registers to store PC and instruction, added nop for jump instructions and branch instructions (if branch was taken) based on PCSel == 1  
+imm_gen: U type debugging. Used splitters to generate immediates for each instruction type following green sheet and provided table in spec  
+
+pipelining: added registers to store PC and instruction, added nop for jump instructions and branch instructions (if branch was taken) based on PCSel == 1  
   
-custom tests:
-Unit tests for R-types, I-types (lb, lh, lw, addi, slli, slit, xori, srli, srai, ori, andi), S-types, SB-types, and U-types. Jenny: Unit tests for register coverage, J-types and I-types (jalr, csrw, csrwi). Integration tests for loads and stores, branches, U-types, and jumps. Edge cases for lui, loads and stores. Integration tests for R-types, I-types and S-types. Edge cases for branch-jump, full memory, loads and stores.
+custom tests: Unit tests for R-types, I-types (lb, lh, lw, addi, slli, slit, xori, srli, srai, ori, andi), S-types, SB-types, and U-types. Jenny: Unit tests for register coverage, J-types and I-types (jalr, csrw, csrwi). Integration tests for loads and stores, branches, U-types, and jumps. Edge cases for lui, loads and stores. Integration tests for R-types, I-types and S-types. Edge cases for branch-jump, full memory, loads and stores.
   
    
